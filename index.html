@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marvel Superheroes">
+    <meta name="keywords" content="Marvel, Superheroes, Comics, Movies, Trailers">
+    <meta name="author" content="Peter Serrano">
+    <title>Marvel Superhero Search</title>
+    <link rel="shortcut icon" type="image/png" href="images/marvel_favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.css" />
+    <link rel="stylesheet" href="css/grid.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="row">
+        <img class="header-image" src="images/marvel-header-white.jpg" alt="Marvel logo banner" />
+    </div>
+    <header role="banner">
+        <div class="row">
+            <div class="col-12">
+                <h1>Marvel Superhero Search</h1>
+            </div>    
+        </div> <!-- end row -->    
+    </header>
+    <div class="row">
+        <div class="col-12">
+            <a name="top-of-page"></a> 
+            <form role="form" action="#" class="search">
+                <fieldset>
+                    <legend>Search for Superheros</legend>
+                    <label for="superheo-search">Search</label>
+                    <input type="text" name=""  placeholder="Search" class="superhero-search  awesomplete"
+                        data-list= "Ant-Man, Black Panther, Captain America, Daredevil, Deadpool, Falcon, Hawkeye, Hulk, Iron Man, Spider-man, Thor, Wolverine, Doctor Strange, Nick Fury, Quicksilver, Scarlet Witch" />
+                    <input type="submit" value="Submit" class="js-superhero-search">
+                </fieldset>
+            </form>    
+        </div>
+    </div> <!-- end row -->
+    <main role="main" aria-live="assertive" hidden>
+        <section role="region">
+            <div class="row">
+                <div class="col-6">
+                    <div class="character-pic"></div>    
+                </div>
+                <div class="col-6">
+                    <h2><span class="character-name"></span></h2>
+                    <p class="character-description expended-paragraph"></p>
+                    <div class="character-links flex-box">
+        
+                    </div>    
+                </div>
+            </div><!-- end row -->
+        </section>
+        
+        <!-- display results for comics-->
+        <section role="region">
+            <div class="row">
+                <h3><i class="fas fa-book-open"></i> Comic Series</h3>
+            </div>
+            <div class="row display-comic-results flex-box">
+            </div><!-- end row -->
+        </section>
+
+        <!-- display results for movies-->
+        <section role="region">
+            <div class="row">
+                <h3><i class="fas fa-video"></i> Movies</h3>
+                <div class="display-movies-results">
+                </div>    
+            </div><!-- end row -->
+        </section>
+        
+        <!-- display results for movie trailer-->
+        <section role="region">
+            <div class="row">
+                <h3><i class="fab fa-youtube"></i> Clips</h3>
+                <div class="display-trailer">
+                </div>    
+            </div><!-- end row -->    
+        </section>
+        
+        <div class="row">
+            <div class="col-12">
+                <a class="to-top-link" href="#top-of-page"><i class="fas fa-arrow-up"></i> Back to top</a>    
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

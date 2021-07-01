@@ -1,0 +1,168 @@
+html  {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+/* HEADER */
+.header-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    padding-top: 0;
+    width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #eb1c24;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-top: 0;
+}
+
+/* FORM */
+fieldset {
+    border: none;
+    margin: 1em;
+}
+
+legend {
+    font-size: 0.1em;
+    color: white;
+}
+
+label {
+    font-size: 0.1em;
+    color: white;
+    display: block;
+    width: 100%
+}
+
+.awesomplete {
+    display: block;
+    width: 100%;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 0.5em;
+    border: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background-color: #eb1c24;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+input:focus {
+    outline:none;
+}
+
+/* HERO INFO */
+.character-pic {
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #eb1c24;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+/* RESULTS */
+i {
+    margin-top: 3em;
+}
+
+.fa-external-link-alt, .fa-square {
+    margin: 0 0.3em 0 0.5em;
+}
+
+.fa-square {
+    color: #eb1c24;
+}
+
+
+.external-link {
+    color: #eb1c24;
+    text-transform: uppercase;
+    border: none;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    align-content: space-between;
+}
+
+.flex-box div {
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 2%;
+}
+
+h3, h4 {
+    color: #eb1c24;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.extended-paragraph {
+    line-height: 1.3em;
+}
+
+.left-pic {
+    width: 95%;
+}
+
+.right-pic {
+    margin-top: 1.5em;
+    width: 80%;
+    border: 10px solid white;
+}
+
+.row-breaker {
+    margin-bottom: 3em;
+}
+
+/* BOTTOM OF PAGE */
+.to-top-link {
+    font-size: 150%;
+    text-decoration: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.fa-arrow-up {
+    margin-top: 1em;    
+}
+
+/* TABLET */
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 160%;
+    }
+}
+
+/* PHONE */
+@media only screen and (max-width: 580px) {
+    h1 {
+        letter-spacing: 0;
+        font-size: 140%;
+    }
+}
